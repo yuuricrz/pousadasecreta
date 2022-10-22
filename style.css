@@ -1,0 +1,178 @@
+@charset "UTF-8";
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;300;500;900&display=swap');
+
+*{
+    border: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+header{
+    padding: 0.5rem 0;
+    background-color: white;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    overflow: hidden;
+    position: fixed;
+    width: 100%;
+    z-index: 1;
+    box-shadow: 1px 1px 5px rgba(0, 0, 0, 0.411);
+}
+header h1{
+    font-weight: 300;
+    font-size: 1.6rem;
+}
+header span{
+    color: lightblue;
+}
+header a{
+    font-size: 1rem;
+    text-decoration: none;
+    color: rgb(0, 0, 0);
+    border-bottom: 0.15rem solid lightblue;
+    margin: 0 0.8rem;
+}
+.background{
+    position: relative;
+    background-image: url(images/pousadabg.jpg);
+    width: 100%;
+    min-height: 100vh;
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-size: cover;
+}
+.textbg{
+    border-radius: 0.8rem;
+    color: white;
+    text-align: center;
+    padding: 4rem;
+    background-color:rgba(173, 216, 230, 0.493);
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.textbg h2{
+    font-size: 3.5rem;
+    margin: 0 0 0.8rem 0;
+}
+.textbg p{
+    color: black;
+}
+main h2{
+    font-weight: 300;
+    text-align: center;
+    margin: 2.5rem;
+    font-size: 2rem;
+}
+main > p{
+    line-height: 2rem;
+    font-size: 1rem;
+    font-weight: 300;
+    text-align: center;
+    margin: 2rem 0 3rem 0;
+}
+picture{
+    display: flex;
+    
+}
+picture img{
+    width: 70%;
+    margin-bottom: 1rem;
+}
+.img1, .img2, .img3{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.img1 > a, .img2 > a, .img3 > a{
+    color: rgb(0, 0, 0);
+    font-size: 1.5rem;
+    text-decoration: none;
+    padding: 0.8rem 3rem;
+    border-bottom: 0.3rem solid lightblue;
+}
+iframe{
+    width: 100%;
+}
+.infopousada{
+    display: grid;
+    justify-content: space-around;
+    align-items: flex-start;
+    grid-template-areas: 
+    "pousada quartos"
+    "alimentacao recepcao";
+}
+.infopousada img{
+    width: 8rem;
+    height: 9rem;
+    object-fit: cover;
+}
+.infopousada p{
+    max-width: 25rem;
+}
+.pousada{
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    margin-bottom: 1rem;
+    grid-area: pousada;
+}
+.alimentação{
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    margin-bottom: 1rem;
+    grid-area: alimentacao;
+}
+.quartos{
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    margin-bottom: 1rem;
+    grid-area: quartos;
+}
+.recepção{
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    margin-bottom: 1rem;
+    grid-area: recepcao;
+}
+.infopousada h3{
+    font-weight: 500;
+    font-size: 1.5rem;
+    color:lightseagreen;
+}
+footer{
+    padding: 0.7rem;
+    color: white;
+    text-align: center;
+    background-color: rgb(4, 118, 156);
+}
+footer p{
+    margin: 1rem auto 1.5rem auto;
+}
+footer picture{
+    display: flex;
+    justify-content: space-evenly;
+
+}
+footer img{
+    margin-left: 5rem;
+    max-width: 2%;
+    height: 100%;
+    width: 100%;
+}
+footer a{
+    text-decoration: none;
+    color: white;
+}
+.credit{
+    font-weight: 500;
+    border-bottom: 0.3rem solid darkcyan;
+}
